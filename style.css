@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container01 {
+    padding: 20px;
+  }
+
+h1 {
+    color: #115718;
+    margin: 0;
+    padding: 20px 0
+}
+
+.input-group {
+    margin-top: 20px;
+}
+
+
+.container02 {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.img-fundo {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
