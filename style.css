@@ -1,27 +1,33 @@
+body,
+html {
+    height: 100%;
+    margin: 0;
+}
+
 h1 {
     color: #115718;
     margin: 0;
-    padding: 20px 0
+    padding: 20px 0;
 }
 
+.content-wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
 
-main{
+main {
     background: url(./img/fundo.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    flex: 1;
 }
-
-
-
-
-
-
-
 
 footer {
     background-color: #151916;
     color: #569D4E;
     font-size: small;
     font-weight: bold;
+    padding: 10px 0;
 }
