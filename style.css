@@ -1,27 +1,16 @@
-body,
-html {
-    height: 100%;
-    margin: 0;
-}
-
 h1 {
     color: #115718;
     margin: 0;
     padding: 20px 0;
 }
 
-.content-wrapper {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
-
-main {
-    background: url(./img/fundo.jpg);
+main{
+    background-image: url(./img/fundo.jpg);
     background-size: cover;
-    background-position: center;
+    background-position: bottom;
     background-repeat: no-repeat;
-    flex: 1;
+    min-height: 100vh;
+    overflow: hidden; 
 }
 
 footer {
