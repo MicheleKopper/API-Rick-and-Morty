@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="style.css">
 
     <title>Rick and Morty</title>
+
 </head>
 
 <body>
@@ -22,8 +23,8 @@
     <header>
         <nav class="navbar bg-body">
             <div class="container">
-                <a class="navbar-brand" href="#">
-                    <img src="./img/icon.png" alt="Icon Rick and Morty" width="30" height="">
+                <a class="navbar-brand" href="/">
+                    <img class="icone" src="./img/icon.png" alt="Icon Rick and Morty" width="30">
                 </a>
             </div>
         </nav>
@@ -50,109 +51,76 @@
             </div>
         </nav>
     </header>
-    <!-- col-tamanho-número de colunas -->
-    <!-- xs (Smartphones) -->
-    <!-- sm (Tablets) -->
-    <!-- md (Desktops) -->
-    <!-- lg (Desktops maiores) -->
+
 
     <main class="container-fluid mt-5">
 
-        <div class="row justify-content-center">
+        <div class="row justify-content-center" id="cardsPersonagens">
 
-            <!-- COLUNA ESQUERDA -->
-            <div class="col-12 col-md-3 d-flex justify-content-center mt-5">
-                <div class="card" style="width: 250px">
-                    <img src="./img/pug.jpg" class="card-img-top" alt="...">
-                   
-                    <div class="card-body">
-                        <h5 class="card-title">Título do card</h5>
-                        <p class="card-text">Vivo-Humano</p>
-                        <p class="card-text">Última localização conhecida</p>
-                        <p class="card-text">Planeta XPTO</p>
-                        <p class="card-text">Visto a última vez em</p>
-                        <p class="card-text">Nome do capítulo</p>
-                    </div>
+            <!-- Cards dos personagens -->
 
-                </div>
-            </div>
-
-            <!-- COLUNA CENTRO -->
-            <div class="col-12 col-md-3 d-flex justify-content-center mt-5">
-                <div class="card" style="width: 250px">
-                    <img src="./img/pug.jpg" class="card-img-top" alt="...">
-                   
-                    <div class="card-body">
-                        <h5 class="card-title">Título do card</h5>
-                        <p class="card-text">Vivo-Humano</p>
-                        <p class="card-text">Última localização conhecida</p>
-                        <p class="card-text">Planeta XPTO</p>
-                        <p class="card-text">Visto a última vez em</p>
-                        <p class="card-text">Nome do capítulo</p>
-                    </div>
-
-                </div>
-            </div>
-
-            <!-- COLUNA DIREITA -->
-            <div class="col-12 col-md-3 d-flex justify-content-center mt-5">
-                <div class="card" style="width: 250px">
-                    <img src="./img/pug.jpg" class="card-img-top" alt="...">
-                   
-                    <div class="card-body">
-                        <h5 class="card-title">Título do card</h5>
-                        <p class="card-text">Vivo-Humano</p>
-                        <p class="card-text">Última localização conhecida</p>
-                        <p class="card-text">Planeta XPTO</p>
-                        <p class="card-text">Visto a última vez em</p>
-                        <p class="card-text">Nome do capítulo</p>
-                    </div>
-
-                </div>
-            </div>
         </div>
 
+
+        <!-- Botões paginação -->
+        <div class="row justify-content-center mt-3 mb-lg-5">
+            <div class="col-auto">
+                <button id="prev-btn" class="btn btn-primary" disabled>Anterior</button>
+            </div>
+
+            <div class="col-auto">
+                <button id="next-btn" class="btn btn-primary">Próximo</button>
+            </div>
+        </div>
 
     </main>
 
 
-
-
-
-
     <footer>
+
         <div class="container pt-5 pb-5">
             <div class="row text-center pb-5">
                 <div class="col-xs-12 col-md-4">
+
                     <div>
-                        <p>PERSONAGENS: XX</p>
+                        <p>PERSONAGENS: <span id="total-personagens" class="text-light"> </span> </p>
                     </div>
                 </div>
+                
                 <div class="col-xs-12 col-md-4">
                     <div>
-                        <p>EPISÓDIOS: XX</p>
+                        <p>EPISÓDIOS: <span id="total-episodios" class="text-light"> </span> </p>
                     </div>
                 </div>
+
                 <div class="col-xs-12 col-md-4">
                     <div>
-                        <p>LOCALIZAÇÕES: XX</p>
+                        <p>LOCALIZAÇÕES: <span id="total-localizacoes" class="text-light"> </span> </p>
                     </div>
                 </div>
             </div>
+
             <div class="row text-center pt-5">
                 <div class="col">
-                    <div>Desenvolvido por: Michele Kopper em 2024</div>
+                    <div>Desenvolvido por: <span class="text-light"> Michele Kopper </span> em 2024</div>
                 </div>
             </div>
+
         </div>
+
     </footer>
+    
+
+    <!-- Link Axios -->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 
     <!-- Link JS Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
     <!-- Meu JS -->
-    <script src="./script.js"></script>
+    <script src="./js/script.js"></script>
 
 </body>
 
 </html>
+
